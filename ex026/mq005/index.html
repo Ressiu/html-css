@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Média Query | Exercício</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Exercício
+        </h1>
+        <i id="menu-hamburguer" onclick="dropMenu()" class="material-symbols-outlined">
+            density_medium
+            </i>
+        <menu id="menulist">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+        </header>
+       <main>
+            <article>
+                <h1>Título do Artigo</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut odit maxime, deleniti eaque incidunt sunt eos voluptatibus rem qui molestias repellat repudiandae laboriosam tempora possimus velit dolores quos consectetur illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur at odit officiis provident odio qui tempore nostrum possimus eligendi, laudantium aut doloremque dolores fuga mollitia sint temporibus rem nemo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor minus temporibus! Placeat in dignissimos minus excepturi ducimus explicabo nulla amet sed natus temporibus eligendi ad minima cum, nesciunt neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eligendi, explicabo beatae ipsam minima, accusantium quisquam provident facere sequi adipisci voluptas nisi molestiae consectetur dolore dignissimos facilis eaque ipsa excepturi!
+                </p>
+            </article>
+       </main>
+       <script>
+        function dropMenu() {
+
+            const menuList = document.getElementById("menulist");
+            const icone = document.getElementsByClassName('material-symbols-outlined')[0]
+
+
+            if (menuList.style.display == "block") {
+                menuList.style.display = "none";
+                icone.innerHTML = "density_medium";
+
+            } else {
+                menuList.style.display = "block";
+                icone.innerHTML = "close";
+            }
+        }
+       </script>
+</body>
+</html>

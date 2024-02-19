@@ -1,0 +1,157 @@
+/* Typical Media Query [W3S] 
+
+    telas muito pequenas: max-width: 600px
+    celular: min-width: 600px
+    tablet: min-width: 768px
+    pc: min-width: 992px
+    tv: min-width: 1200px
+
+    https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+
+    AS MÉDIA QUERY PARA DISPOSITIVOS 'CELULARES' NÃO SÃO NECESSÁRIAS NESTE PROJETO POIS UTILIZEI O MÉTODO FIRST MOBILE
+
+
+*/
+
+@charset "UTF-8";
+
+/*media query impressão */
+@media print {
+    body,
+    html {
+        background-color: white;
+    }
+
+    h1 {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1::after {
+        content: 'Impressões';
+    }
+
+    main {
+        text-align: center;
+        width: 90vw;
+        border: 1px solid black;
+    }
+
+    main::after {
+        text-decoration: overline;
+        content: 'Impressão retirada do site teste Ressiu.com';
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+}
+
+/*media query tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-color: #42235e;
+    }
+
+    h1::after {
+        content: 'Tabletes';
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+}
+
+/*media query pc */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-color: #23485e;
+    }
+
+    h1::after {
+        content: 'Computadores';
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+}
+
+/*media query telas maiores */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: #235e2d;
+    }
+
+    h1::after {
+        content: 'Televisões';
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+}

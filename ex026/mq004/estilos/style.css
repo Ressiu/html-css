@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    cursor: default;
+}
+
+body {
+    width: 100vw;
+    background-color: #111111;
+}
+
+h1 {
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+h1::after {
+    content: 'Celulares';
+}
+
+p {
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    margin: 5rem auto;
+    width: 80vw;
+    border-radius: 9px;
+    background-color: #181818;
+}
+
+img#phone {
+    display: block;
+}
+
+img#tv {
+    display: none;
+}
+
+img#print {
+    display: none;
+}
+
+img#tablet {
+    display: none;
+}
+
+img#pc {
+    display: none;
+}
